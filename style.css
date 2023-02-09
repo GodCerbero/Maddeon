@@ -211,11 +211,11 @@ nav div{
 .welcome_servicescontainer_shadow{
     position: relative;
     height: 250px;
-    width: 100%;
+    width: 95%;
     background-color: #000;
     z-index: 10;
     top: 19px;
-    left: 10px;
+    left: 19px;
     border-radius: 50px 0px 50px 0px;
 }
 
