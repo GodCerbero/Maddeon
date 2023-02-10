@@ -19,9 +19,16 @@ window.onscroll = function() {
     if (timeout) {
         clearTimeout(timeout);
     }
+ };
 
-};
 
+// const capasuperior = document.querySelector(".welcome_overlay");
+
+// const servicio = document.querySelector(".welcome_servicescontainer_service");
+
+// servicio.addEventListener(MouseEvent, function(){
+//     capasuperior.style.transform= 'translateY(-100%)'
+// })
 
 
 

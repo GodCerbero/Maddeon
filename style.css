@@ -146,6 +146,17 @@ nav div{
     width: 100%;
 }
 
+.welcome_overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 24;
+    display: none;
+}
+
 .maddeon{
     color:#b469ff;
 }
@@ -206,21 +217,6 @@ nav div{
     margin-right: 8%;
 }
 
-
-
-.welcome_servicescontainer_shadow{
-    position: relative;
-    height: 250px;
-    width: 95%;
-    background-color: #000;
-    z-index: 10;
-    top: 19px;
-    left: 19px;
-    border-radius: 50px 0px 50px 0px;
-}
-
-
-
 .welcome_servicescontainer_service{
     position: absolute;
     height: 230px;
@@ -231,13 +227,49 @@ nav div{
     padding: 20px;
     transition: all 0.5s;
     z-index: 25;
-    border-radius: 50px 0px 50px 0px;
+    border-radius: 40px;
     font-weight: 600;
 }
 
+/* .fluido{
+    display: none;
+    min-width: 300%;
+    min-height: 200%;
+    border-radius: 30%;
+    position: absolute;
+    animation: spin 5s linear infinite;
+    z-index: 10;
+}
+
+.fluidoa{
+    background-color:#000000;
+}
+
+.fluidob{
+    background-color:#dddddd;
+}
+
+@keyframes spin {
+0%{
+    transform: translateY(0px);
+}
+
+100%{
+    transform: translateY(-1500px);
+}
+} */
+
+.welcome_servicescontainer_service:hover + .welcome_overlay{
+    display: flex;
+
+}
+
 .welcome_servicescontainer_service:hover{
+    position: absolute;
+    height: 80vh;
     transform: scale(1.07);
 }
+
 
 .welcome_servicescontainer_service button{
     height: 50px;
@@ -252,6 +284,7 @@ nav div{
 .servicea{
     background-color: #0c0c0c;
     color: white;
+    border: solid #000
 }
 
 .servicea:hover{
@@ -270,6 +303,7 @@ nav div{
 
     background-color:#ffffff;
     color: #0a0b0b;
+    border: solid #aaa;
 }
 
 .serviceb:hover{
