@@ -19,6 +19,7 @@ window.onscroll = function() {
     if (timeout) {
         clearTimeout(timeout);
     }
+<<<<<<< HEAD
  };
 
 
@@ -29,6 +30,11 @@ window.onscroll = function() {
 // servicio.addEventListener(MouseEvent, function(){
 //     capasuperior.style.transform= 'translateY(-100%)'
 // })
+=======
+
+};
+
+>>>>>>> 0ab9b6746442a91147c6755e9e8497cf6e46f586
 
 
 
